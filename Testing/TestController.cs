@@ -23,7 +23,7 @@ namespace Testing
 
         //Uncomment this test which fails the testing
 
-        /*[Fact]
+        [Fact]
         public void Test_Index_POST_InvalidModelState()
         {
             // Arrange
@@ -35,7 +35,7 @@ namespace Testing
             // Assert
             var badRequestResult = Assert.IsType<BadRequestObjectResult>(result);
             Assert.IsType<SerializableError>(badRequestResult.Value);
-        }*/
+        }
 
         [Fact]
         public void Test_Index_POST_ValidModelState()
